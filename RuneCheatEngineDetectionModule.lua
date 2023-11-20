@@ -2,21 +2,39 @@
 	Rune Detection Module
 	
 	for context on why this was made, it's just to prove
-	the point that Nano and the Rune Team is spreading an unsafe
-	and malicious "exploit" or "executor" that was used back in 2008-2010
+	to nano that the method is doing, is completely unsafe
+	and this can go even worse if he keeps attempting to do this
+	method from 2008 - 2009
 
-	just to lyk, not even nano made Rune CE, it was jayy and his credits were removed
-	by time due to nano being greedy as always, stealing projects from their developers
-	like me.
+	ill let this notice on here, as nano didn't give a fuck enough
+	to actually credit Jayy itself as the owner and just like another
+	random guy that helped on this
 
-	https://robloxscripts.com/cheat-engine-script-execution-for-byfron-on-roblox-uwp/ -- original cheat engine made by Jayy
-	
-	^ this was never intended to be made an executor, just was a proof of concept
-	to show that byfron didnt detect cheat engine, just that nano ALWAYS tries to get around
-	of making the actual Rune executor and rather steals others people projects to get "credits"
-	about it and fucking advertise Rune everywhere.
+	jayy WAS THE GUY that created this method and WAS THE GUY that created
+	the lua file that you can find on the RUNECE folder at AUTORUN, don't believe me?
+	difference both (https://robloxscripts.com/cheat-engine-script-execution-for-byfron-on-roblox-uwp/) and
+	the file that you can find at rune directory on `RUNECE\autorun\roblox.lua`
+
+	jayy made this only for proving a point that cheat engine worked on roblox and made this as a joke, not
+	to be made like an executor which in fact is being used by nano himself to the point he is making a C++ program
+	calling it "Rune External" which is 100% being affected by this same module due to being completely 1:1 just that
+	without cheat engine.
+
+	that's all nano, hope you enjoyed stealing fluster and jayy's cheat engine credits and leaving both of us credits
+	to no little until we weren't needed for you anymore.
 
 	shotout and credits to alex the great and dottik for mental support and the BALLS function.
+
+	Documentation:
+
+	RuneDetectionModule:IsRunningCheatEngine() -> boolean
+		Returns if player is using Cheat Engine
+
+	RuneDetectionModule:HijackEnvironment() -> nil
+		Forces the player to replace it's init scripts to
+		whatever you want to set them with, scripts must be
+		parented to a folder and all selected with :GetChildren
+		careless if it's a only single file.
 ]]
 
 local RuneDetectionModule = {};
