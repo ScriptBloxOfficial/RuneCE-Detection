@@ -37,10 +37,8 @@ function RuneDetectionModule:IsRunningCheatEngine()
 			DataCount += 1;
 		end
 	end
-	
-	if (DataCount >= 1) then
-		return true;
-	end
+
+	return (DataCount >= 1)
 end
 
 function RuneDetectionModule:HijackEnvironment(scripts: SharedTable)
@@ -64,23 +62,6 @@ end
 function RuneDetectionModule:Balls(size_modifier: number)
     if type(size_modifier) ~= "number" then
         size_modifier = 1
-    end
-
-    if _G.superiorballsdebounce then
-        return
-    end
-
-    if not _G.superiorballsloaded then
-        _G.superiorballsdebounce = true
-
-        local res = messageboxasync("USER CAUTION:\n\nSome games with invasive anti-cheats may ban if you run this function.\nUse at your own risk.\n\nOk: Run anyways.\nCancel: Do not run.", "USER WARNING", 1)
-            
-        _G.superiorballsdebounce = nil
-        if res ~= 1 then
-            return
-        end
-            
-        _G.superiorballsloaded = true
     end
 
     local function ballz(character, namelen)
