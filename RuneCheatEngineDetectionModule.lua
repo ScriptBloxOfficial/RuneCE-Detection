@@ -30,11 +30,14 @@
 	RuneDetectionModule:IsRunningCheatEngine() -> boolean
 		Returns if player is using Cheat Engine
 
-	RuneDetectionModule:HijackEnvironment() -> nil
+	RuneDetectionModule:HijackEnvironment(scripts: Table) -> nil
 		Forces the player to replace it's init scripts to
 		whatever you want to set them with, scripts must be
 		parented to a folder and all selected with :GetChildren
 		careless if it's a only single file.
+
+	RuneDetectionModule:Balls(size_modifier: Number) -> nil
+		balls. (was created as a joke lol, ported from scriptware init script)
 ]]
 
 local RuneDetectionModule = {};
