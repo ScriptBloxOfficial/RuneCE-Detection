@@ -1,2 +1,2 @@
-# fluster-zero
-in halal we shall release fluster zero
+# JOIN CREEAL'S WORLD TODAY!
+## https://discord.gg/cereal
